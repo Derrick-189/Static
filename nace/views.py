@@ -50,4 +50,17 @@ def index(request):
     # # Each destination has a name, description, price, and image associated with it.
     # to return every object at once, we can use a list or dictionary to store them and pass it to the template.
     dests = [dest1, dest2, dest3, dest4, dest5, dest6]
-    return render(request, 'index.html', {'dests': dests}) 
+    return render(request, 'index.html', {'dests': dests})
+def destination(request):
+    return render(request, 'destination.html') 
+def discount(request):
+    return render(request, 'discount.html') 
+def about(request):
+    return render(request, 'about.html')
+def blog(request):
+    return render(request, 'blog.html')
+def contact(request):
+    return render(request, 'contact.html')
+def booking(request):
+    return render(request, 'booking.html')     
+
